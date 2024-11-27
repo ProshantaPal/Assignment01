@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Nerdy</title>
 </head>
 <body>
-<section class="bg-gradient-to-r from-white-500 to-gray-500">
-    <header class="flex justify-around mx-[40px] my-[40px]">
+<section>
+    <header class="flex my-[40px] justify-between">
         <div>
-          <h1 class="text-black font-bold text-xl">Nerdy</h1>
+          <h1 class="text-black font-bold text-xl ml-[100px]">Nerdy</h1>
         </div>
         <div>
-          <ul class="flex justify-around gap-[20px]">
+          <ul class="flex gap-[20px] ml-[30px]">
             <li>Home</li>
             <li>Projects</li>
             <li>About</li>
@@ -21,15 +23,15 @@
           </ul>
         </div>
         <div>
-          <button class="border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl px-[8px] py-[8px]">Buy Now</button>
+          <button class="ml-[30px] mr-[105px] border-[1px] border-solid bg-[#D8FB78] rounded-3xl px-[8px] py-[8px]">Buy Now</button>
         </div>
     </header>
 
-    <div class="flex justify-around mx-[100px] my-[40px] bg-[white] rounded-2xl w-[1280px] h-[570px]">
-        <div class="w-[50%]">
-            <h1 class="text-black font-bold text-3xl">Designed to <br> effortlessly combine <br> style and functionality.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequatur voluptas ut nesciunt? Nihil accusantium aperiam asperiores sunt fuga sint?</p>
-            <button>Explore Deal</button>
+    <div class="flex w-[1280px] h-[570px] mx-[100px] my-[40px] bg-[white] px-[10px] rounded-2xl gap-[40px]">
+        <div class="w-[50%] gap-y-4">
+            <h1 class="text-black font-bold text-3xl my-[20px]">Designed to <br> effortlessly combine <br> style and functionality.</h1>
+            <p class="text-justify my-[20px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequatur voluptas ut nesciunt? Nihil accusantium aperiam asperiores sunt fuga sint?Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button class="border-[1px] border-solid bg-[#D8FB78] rounded-3xl px-[8px] py-[8px] my-[20px]">Explore Deal</button>
         </div>
         <div class="w-[50%] rounded-2xl">
             <img src="img1.png" alt="Profile"/>
@@ -38,103 +40,82 @@
 </section>
 <section>
 <div>
-    <h3>Best Selling Products</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequatur voluptas ut nesciunt? Nihil accusantium aperiam asperiores sunt fuga sint?</p>
+    <h3 class="text-black font-bold text-center text-xl my-[10px]">Best Selling Products</h3>
+    <p class="text-black text-center my-10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequatur voluptas ut nesciunt? Nihil accusantium aperiam asperiores sunt fuga sint?</p>
 </div>
-<div>
-    <div>
-        <img src="img2.png" alt="Profile"/>
-        <p>Floral-print Silk Shirt</p>
-        <p>$144.00</p>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-            </span>
+<div class="grid grid-cols-3 mx-[100px] my-[20px]">
+    <div class="mx-[60px] bg-[#f2f1ed] border-solid rounded-2xl w-[282px] mb-[20px] px-[20px] pb-[20px]">
+        <img class="border-solid rounded-2xl bg-[white] my-[20px]" src="img2.png" alt="Profile"/>
+        <p class="py-[2px]">Floral-print Silk Shirt</p>
+        <p class="py-[2px]">$144.00</p>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl w-[240px] mb-[10px]">Buy Now</button> <br>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black rounded-3xl w-[200px]">Add to Cart</button>
+        <span class="border-solid border-black rounded-3xl border-[1px] px-[7px] py-[5px]"><i class="fa-regular fa-heart"></i></span>
     </div>
-    <div>
-        <img src="img2.png" alt="Profile"/>
-        <p>Floral-print Silk Shirt</p>
-        <p>$144.00</p>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-            </span>
+    <div class="mx-[60px] bg-[#f2f1ed] border-solid rounded-2xl w-[282px] mb-[20px] px-[20px] pb-[20px]">
+        <img class="border-solid rounded-2xl bg-[white] my-[20px]" src="img2.png" alt="Profile"/>
+        <p class="py-[2px]">Floral-print Silk Shirt</p>
+        <p class="py-[2px]">$144.00</p>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl w-[240px] mb-[10px]">Buy Now</button> <br>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black rounded-3xl w-[200px]">Add to Cart</button>
+        <span class="border-solid border-black rounded-3xl border-[1px] px-[7px] py-[5px]"><i class="fa-regular fa-heart"></i></span>
     </div>
-    <div>
-        <img src="img2.png" alt="Profile"/>
-        <p>Floral-print Silk Shirt</p>
-        <p>$144.00</p>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-            </span>
+    <div class="mx-[60px] bg-[#f2f1ed] border-solid rounded-2xl w-[282px] mb-[20px] px-[20px] pb-[20px]">
+        <img class="border-solid rounded-2xl bg-[white] my-[20px]" src="img2.png" alt="Profile"/>
+        <p class="py-[2px]">Floral-print Silk Shirt</p>
+        <p class="py-[2px]">$144.00</p>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl w-[240px] mb-[10px]">Buy Now</button> <br>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black rounded-3xl w-[200px]">Add to Cart</button>
+        <span class="border-solid border-black rounded-3xl border-[1px] px-[7px] py-[5px]"><i class="fa-regular fa-heart"></i></span>
     </div>
-    <div>
-        <img src="img2.png" alt="Profile"/>
-        <p>Floral-print Silk Shirt</p>
-        <p>$144.00</p>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-            </span>
+    <div class="mx-[60px] bg-[#f2f1ed] border-solid rounded-2xl w-[282px] mb-[20px] px-[20px] pb-[20px]">
+        <img class="border-solid rounded-2xl bg-[white] my-[20px]" src="img2.png" alt="Profile"/>
+        <p class="py-[2px]">Floral-print Silk Shirt</p>
+        <p class="py-[2px]">$144.00</p>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl w-[240px] mb-[10px]">Buy Now</button> <br>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black rounded-3xl w-[200px]">Add to Cart</button>
+        <span class="border-solid border-black rounded-3xl border-[1px] px-[7px] py-[5px]"><i class="fa-regular fa-heart"></i></span>
     </div>
-    <div>
-        <img src="img2.png" alt="Profile"/>
-        <p>Floral-print Silk Shirt</p>
-        <p>$144.00</p>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-            </span>
+    <div class="mx-[60px] bg-[#f2f1ed] border-solid rounded-2xl w-[282px] mb-[20px] px-[20px] pb-[20px]">
+        <img class="border-solid rounded-2xl bg-[white] my-[20px]" src="img2.png" alt="Profile"/>
+        <p class="py-[2px]">Floral-print Silk Shirt</p>
+        <p class="py-[2px]">$144.00</p>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl w-[240px] mb-[10px]">Buy Now</button> <br>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black rounded-3xl w-[200px]">Add to Cart</button>
+        <span class="border-solid border-black rounded-3xl border-[1px] px-[7px] py-[5px]"><i class="fa-regular fa-heart"></i></span>
     </div>
-    <div>
-        <img src="img2.png" alt="Profile"/>
-        <p>Floral-print Silk Shirt</p>
-        <p>$144.00</p>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-            </span>
+    <div class="mx-[60px] bg-[#f2f1ed] border-solid rounded-2xl w-[282px] mb-[20px] px-[20px] pb-[20px]">
+        <img class="border-solid rounded-2xl bg-[white] my-[20px]" src="img2.png" alt="Profile"/>
+        <p class="py-[2px]">Floral-print Silk Shirt</p>
+        <p class="py-[2px]">$144.00</p>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl w-[240px] mb-[10px]">Buy Now</button> <br>
+        <button class="px-[20px] py-[2px] border-[1px] border-solid border-black rounded-3xl w-[200px]">Add to Cart</button>
+        <span class="border-solid border-black rounded-3xl border-[1px] px-[7px] py-[5px]"><i class="fa-regular fa-heart"></i></span>
     </div>
 </div>
 </section>
-<footer>
+<footer class="h-[300px] bg-[lightgray] px-[20px] py-[20px]">
 <div>
-    <h1>Nerdy</h1>
+    <h1 class="text-black font-bold text-xl text-center">Nerdy</h1>
 </div>
 <div>
-    <ul>
+    <ul class="flex text-gray my-[20px] justify-center gap-[20px]">
         <li>Home</li>
         <li>Projects</li>
         <li>About</li>
         <li>Contact</li>
     </ul>
 </div>
-<div>
-    <!-- links -->
+<div class="flex justify-center gap-[20px] text-3xl my-[20px]">
+    <span class="text-blue"><i class="fa-brands fa-facebook"></i></span>
+    <span class="text-black"><i class="fa-brands fa-x-twitter"></i></span>
+    <span class="text-darkblue"><i class="fa-brands fa-linkedin"></i></span>
+    <span class="text-red"><i class="fa-brands fa-youtube"></i></span>
 </div>
 <hr>
-<div>
-    <input type="email" name="email" id="email">
-    <button>Subscribe</button>
+<div class="text-center my-[20px] gap-[20px]">
+    <input class="border-solid rounded-3xl border-gray placeholder:text-gray px-[10px] py-[10px] w-[500px]" placeholder="Enter your email address" type="email" name="email" id="email">
+    <button class="border-[1px] border-solid border-black bg-[#D8FB78] rounded-3xl px-[10px] py-[10px]">Subscribe</button>
 </div>
 </footer>
 </body>
